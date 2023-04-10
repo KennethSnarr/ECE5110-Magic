@@ -1,0 +1,125 @@
+magic
+tech sky130A
+timestamp 1676660012
+<< error_p >>
+rect 86 -10 101 -9
+<< nwell >>
+rect -42 135 175 426
+<< nmos >>
+rect 32 3 47 53
+rect 86 3 101 53
+<< pmos >>
+rect 32 253 47 353
+rect 72 253 87 353
+<< ndiff >>
+rect -4 45 32 53
+rect -4 11 4 45
+rect 21 11 32 45
+rect -4 3 32 11
+rect 47 45 86 53
+rect 47 11 58 45
+rect 75 11 86 45
+rect 47 3 86 11
+rect 101 45 137 53
+rect 101 11 112 45
+rect 129 11 137 45
+rect 101 3 137 11
+<< pdiff >>
+rect -4 345 32 353
+rect -4 261 4 345
+rect 21 261 32 345
+rect -4 253 32 261
+rect 47 253 72 353
+rect 87 345 123 353
+rect 87 261 98 345
+rect 115 261 123 345
+rect 87 253 123 261
+<< ndiffc >>
+rect 4 11 21 45
+rect 58 11 75 45
+rect 112 11 129 45
+<< pdiffc >>
+rect 4 261 21 345
+rect 98 261 115 345
+<< psubdiff >>
+rect -4 -52 8 -24
+rect 111 -52 123 -24
+<< nsubdiff >>
+rect 3 380 15 408
+rect 118 380 130 408
+<< psubdiffcont >>
+rect 8 -52 111 -24
+<< nsubdiffcont >>
+rect 15 380 118 408
+<< poly >>
+rect 32 353 47 366
+rect 72 353 87 366
+rect 32 170 47 253
+rect 72 224 87 253
+rect 72 209 101 224
+rect -1 162 47 170
+rect -1 145 7 162
+rect 24 145 47 162
+rect -1 137 47 145
+rect 32 53 47 137
+rect 86 129 101 209
+rect 86 121 134 129
+rect 86 104 109 121
+rect 126 104 134 121
+rect 86 96 134 104
+rect 86 53 101 96
+rect 32 -10 47 3
+rect 86 -9 101 3
+<< polycont >>
+rect 7 145 24 162
+rect 109 104 126 121
+<< locali >>
+rect -40 408 173 418
+rect -40 380 15 408
+rect 118 380 173 408
+rect -40 370 173 380
+rect -4 345 29 370
+rect -4 261 4 345
+rect 21 261 29 345
+rect -4 253 29 261
+rect 90 345 123 353
+rect 90 261 98 345
+rect 115 261 123 345
+rect 90 209 123 261
+rect 50 176 123 209
+rect -1 162 32 170
+rect -1 145 7 162
+rect 24 145 32 162
+rect -1 137 32 145
+rect -4 45 29 53
+rect -4 11 4 45
+rect 21 11 29 45
+rect -4 -14 29 11
+rect 50 45 83 176
+rect 101 121 134 129
+rect 101 104 109 121
+rect 126 104 134 121
+rect 101 96 134 104
+rect 50 11 58 45
+rect 75 11 83 45
+rect 50 3 83 11
+rect 104 45 137 53
+rect 104 11 112 45
+rect 129 11 137 45
+rect 104 -14 137 11
+rect -40 -24 173 -14
+rect -40 -52 8 -24
+rect 111 -52 173 -24
+rect -40 -62 173 -52
+<< labels >>
+flabel locali 101 96 134 129 0 FreeSerif 80 0 0 0 B
+port 8 nsew
+flabel locali -1 137 32 170 0 FreeSerif 80 0 0 0 A
+port 3 nsew
+flabel locali 50 53 83 209 0 FreeSerif 80 0 0 0 Y
+port 2 nsew
+flabel locali -40 370 173 418 0 FreeSerif 80 0 0 0 VDD!
+port 0 nsew
+flabel locali -40 -62 173 -14 0 FreeSerif 80 0 0 0 GND!
+port 1 nsew
+<< end >>

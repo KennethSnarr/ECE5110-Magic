@@ -1,0 +1,9 @@
+* NGSPICE file created from tristate.ext - technology: sky130A
+
+*.subckt tristate VDD GND A EN NOT_EN
+X0 a_94_6# A GND GND sky130_fd_pr__nfet_01v8 ad=1.05e+11p pd=1.42e+06u as=1.8e+11p ps=1.72e+06u w=500000u l=150000u
+X1 a_166_6# NOT_EN a_94_506# VDD sky130_fd_pr__pfet_01v8 ad=3.6e+11p pd=2.72e+06u as=2.1e+11p ps=2.42e+06u w=1e+06u l=150000u
+X2 a_166_6# EN a_94_6# GND sky130_fd_pr__nfet_01v8 ad=1.8e+11p pd=1.72e+06u as=0p ps=0u w=500000u l=150000u
+X3 a_94_506# A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.6e+11p ps=2.72e+06u w=1e+06u l=150000u
+*.ends
+
