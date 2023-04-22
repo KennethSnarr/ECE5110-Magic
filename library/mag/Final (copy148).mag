@@ -1,0 +1,20 @@
+magic
+tech sky130A
+timestamp 1681156068
+use DFF  DFF_0
+timestamp 1681152781
+transform 1 0 134 0 1 0
+box -134 0 1621 488
+use DFF  DFF_1
+timestamp 1681152781
+transform 1 0 1860 0 1 0
+box -134 0 1621 488
+use DFF  DFF_2
+timestamp 1681152781
+transform 1 0 3586 0 1 0
+box -134 0 1621 488
+use DFF  DFF_3
+timestamp 1681152781
+transform 1 0 5312 0 1 0
+box -134 0 1621 488
+<< end >>

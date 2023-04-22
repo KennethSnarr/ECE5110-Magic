@@ -1,0 +1,93 @@
+** sch_path: /home/ksnarr/magic/library/xschem/multiplexor.sch
+**.subckt multiplexor A2 Y2 B2 A3 Y3 B3 A0 Y0 B0 A1 Y1 B1 A6 Y6 B6 A7 Y7 B7 A4 Y4 B4 A5 Y5 B5 SEL
+*.ipin A2
+*.opin Y2
+*.ipin B2
+*.ipin A3
+*.opin Y3
+*.ipin B3
+*.ipin A0
+*.opin Y0
+*.ipin B0
+*.ipin A1
+*.opin Y1
+*.ipin B1
+*.ipin A6
+*.opin Y6
+*.ipin B6
+*.ipin A7
+*.opin Y7
+*.ipin B7
+*.ipin A4
+*.opin Y4
+*.ipin B4
+*.ipin A5
+*.opin Y5
+*.ipin B5
+*.ipin SEL
+x1 A2 net1 SEL nand2
+x2 net17 net2 B2 nand2
+x3 net1 Y2 net2 nand2
+x4 A3 net3 SEL nand2
+x5 net17 net4 B3 nand2
+x6 net3 Y3 net4 nand2
+x7 A0 net5 SEL nand2
+x8 net17 net6 B0 nand2
+x9 net5 Y0 net6 nand2
+x10 A1 net7 SEL nand2
+x11 net17 net8 B1 nand2
+x12 net7 Y1 net8 nand2
+x13 A6 net9 SEL nand2
+x14 net17 net10 B6 nand2
+x15 net9 Y6 net10 nand2
+x16 A7 net11 SEL nand2
+x17 net17 net12 B7 nand2
+x18 net11 Y7 net12 nand2
+x19 A4 net13 SEL nand2
+x20 net17 net14 B4 nand2
+x21 net13 Y4 net14 nand2
+x22 A5 net15 SEL nand2
+x23 net17 net16 B5 nand2
+x24 net15 Y5 net16 nand2
+x25 SEL net17 inv
+**.ends
+
+* expanding   symbol:  nand2.sym # of pins=3
+** sym_path: /home/ksnarr/magic/library/xschem/nand2.sym
+** sch_path: /home/ksnarr/magic/library/xschem/nand2.sch
+.subckt nand2 A Y B
+*.opin Y
+*.ipin A
+*.ipin B
+XM1 Y B net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  inv.sym # of pins=2
+** sym_path: /home/ksnarr/magic/library/xschem/inv.sym
+** sch_path: /home/ksnarr/magic/library/xschem/inv.sch
+.subckt inv A Y
+*.opin Y
+*.ipin A
+XM1 Y A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end

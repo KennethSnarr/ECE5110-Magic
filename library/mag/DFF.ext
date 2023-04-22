@@ -1,99 +1,315 @@
-timestamp 1679435600
+timestamp 1681866284
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
-parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
-port "Q" 22 1080 106 1146 270 li
-port "NOT_Q" 23 1416 106 1482 270 li
-port "CLK" 6 202 304 400 370 li
-port "D" 1 -2 404 64 470 li
-port "VDD!" 0 -80 740 1582 836 li
-port "GND!" 11 -80 -124 1582 -28 li
-node "a_1330_6#" 240 1.14163 1330 6 ndif 0 0 0 0 0 0 0 0 5000 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_994_6#" 240 1.18155 994 6 ndif 0 0 0 0 0 0 0 0 5000 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_430_6#" 240 1.19205 430 6 ndif 0 0 0 0 0 0 0 0 5000 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_94_6#" 240 0.719234 94 6 ndif 0 0 0 0 0 0 0 0 5000 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_430_506#" 2104 650.673 430 506 pdif 0 0 0 0 0 0 0 0 7200 344 15600 556 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27756 1752 0 0 55836 1956 41824 2664 0 0 0 0 0 0 0 0 0 0
-node "Q" 2055 256.555 1080 106 li 0 0 0 0 0 0 0 0 7200 344 15600 556 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26916 1696 0 0 55836 1956 14424 796 0 0 0 0 0 0 0 0 0 0
-node "NOT_Q" 2100 326.994 1416 106 li 0 0 0 0 0 0 0 0 7200 344 15600 556 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27756 1752 0 0 55836 1956 14424 796 0 0 0 0 0 0 0 0 0 0
-node "a_94_506#" 2069 365.092 94 506 pdif 0 0 0 0 0 0 0 0 7200 344 15600 556 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26916 1696 0 0 60192 2088 30164 1744 0 0 0 0 0 0 0 0 0 0
-node "a_480_n20#" 2127 271.27 480 -20 p 0 0 0 0 0 0 0 0 7200 344 14400 544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27756 1752 0 0 50556 1796 14424 796 0 0 0 0 0 0 0 0 0 0
-node "CLK" 2368 286.318 202 304 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 59028 3448 0 0 13068 528 0 0 0 0 0 0 0 0 0 0 0 0
-node "D" 2556 430.791 -2 404 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53832 3392 0 0 8712 528 26892 1680 0 0 0 0 0 0 0 0 0 0
-node "VDD!" 15304 3564.46 -80 740 li 0 0 0 0 971940 4504 0 0 85008 3148 129600 4896 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 298548 7728 0 0 0 0 0 0 0 0 0 0 0 0
-substrate "GND!" 0 0 -80 -124 li 0 0 0 0 0 0 0 0 36000 1720 83440 3092 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 203772 4856 0 0 0 0 0 0 0 0 0 0 0 0
-cap "NOT_Q" "a_430_506#" 157.85
-cap "a_94_506#" "a_480_n20#" 195.884
-cap "CLK" "Q" 2.85124
-cap "D" "a_430_6#" 0.0829202
-cap "a_430_506#" "Q" 325.42
-cap "NOT_Q" "a_480_n20#" 7.67638
-cap "a_94_6#" "VDD!" 0.378616
-cap "a_994_6#" "a_430_506#" 1.12707
-cap "a_94_506#" "a_1330_6#" 0.0405075
-cap "D" "VDD!" 277.546
-cap "a_430_506#" "a_430_6#" 0.34317
-cap "a_480_n20#" "Q" 36.0598
-cap "NOT_Q" "a_1330_6#" 0.456042
-cap "CLK" "VDD!" 134.445
-cap "D" "a_94_6#" 0.0829202
-cap "a_994_6#" "a_480_n20#" 0.0566709
-cap "a_430_506#" "VDD!" 327.035
-cap "NOT_Q" "a_94_506#" 103.234
-cap "a_480_n20#" "a_430_6#" 0.0426392
-cap "Q" "a_1330_6#" 0.0855462
-cap "CLK" "D" 105.581
-cap "a_430_506#" "a_94_6#" 0.120095
-cap "a_94_506#" "Q" 65.9215
-cap "a_480_n20#" "VDD!" 287.535
-cap "D" "a_430_506#" 33.2603
-cap "a_994_6#" "a_94_506#" 0.0634021
-cap "a_480_n20#" "a_94_6#" 0.0358975
-cap "CLK" "a_430_506#" 21.9524
-cap "NOT_Q" "Q" 274.197
-cap "a_94_506#" "a_430_6#" 0.153137
-cap "NOT_Q" "a_994_6#" 0.120095
-cap "VDD!" "a_1330_6#" 0.378616
-cap "D" "a_480_n20#" 162.004
-cap "CLK" "a_480_n20#" 116.808
-cap "NOT_Q" "a_430_6#" 0.0762103
-cap "a_94_506#" "VDD!" 309.729
-cap "a_994_6#" "Q" 0.36995
-cap "a_480_n20#" "a_430_506#" 100.609
-cap "a_94_506#" "a_94_6#" 0.34317
-cap "NOT_Q" "VDD!" 341.543
-cap "Q" "a_430_6#" 0.106149
-cap "D" "a_94_506#" 138.404
-cap "NOT_Q" "a_94_6#" 0.0380538
-cap "a_430_506#" "a_1330_6#" 1.10812
-cap "CLK" "a_94_506#" 95.4513
-cap "Q" "VDD!" 288.296
-cap "NOT_Q" "D" 7.53105
-cap "a_994_6#" "VDD!" 0.378616
-cap "a_94_506#" "a_430_506#" 259.072
-cap "a_94_6#" "Q" 0.0762103
-cap "CLK" "NOT_Q" 2.60284
-cap "a_480_n20#" "a_1330_6#" 0.0503188
-cap "VDD!" "a_430_6#" 0.378616
-cap "D" "Q" 5.05897
-device msubckt sky130_fd_pr__nfet_01v8 1380 6 1381 7 l=30 w=100 "GND!" "a_430_506#" 60 0 "a_1330_6#" 100 0 "NOT_Q" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 1300 6 1301 7 l=30 w=100 "GND!" "Q" 60 0 "GND!" 100 0 "a_1330_6#" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 1044 6 1045 7 l=30 w=100 "GND!" "NOT_Q" 60 0 "a_994_6#" 100 0 "Q" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 964 6 965 7 l=30 w=100 "GND!" "a_94_506#" 60 0 "GND!" 100 0 "a_994_6#" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 736 6 737 7 l=30 w=100 "GND!" "D" 60 0 "GND!" 100 0 "a_480_n20#" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 480 6 481 7 l=30 w=100 "GND!" "a_480_n20#" 60 0 "a_430_6#" 100 0 "a_430_506#" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 400 6 401 7 l=30 w=100 "GND!" "CLK" 60 0 "GND!" 100 0 "a_430_6#" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 144 6 145 7 l=30 w=100 "GND!" "CLK" 60 0 "a_94_6#" 100 0 "a_94_506#" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 64 6 65 7 l=30 w=100 "GND!" "D" 60 0 "GND!" 100 0 "a_94_6#" 100 0
-device msubckt sky130_fd_pr__pfet_01v8 1408 506 1409 507 l=30 w=200 "VDD!" "a_430_506#" 60 0 "NOT_Q" 200 0 "VDD!" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 1300 506 1301 507 l=30 w=200 "VDD!" "Q" 60 0 "VDD!" 200 0 "NOT_Q" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 1072 506 1073 507 l=30 w=200 "VDD!" "NOT_Q" 60 0 "Q" 200 0 "VDD!" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 964 506 965 507 l=30 w=200 "VDD!" "a_94_506#" 60 0 "VDD!" 200 0 "Q" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 736 506 737 507 l=30 w=200 "VDD!" "D" 60 0 "VDD!" 200 0 "a_480_n20#" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 508 506 509 507 l=30 w=200 "VDD!" "a_480_n20#" 60 0 "a_430_506#" 200 0 "VDD!" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 400 506 401 507 l=30 w=200 "VDD!" "CLK" 60 0 "VDD!" 200 0 "a_430_506#" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 172 506 173 507 l=30 w=200 "VDD!" "CLK" 60 0 "a_94_506#" 200 0 "VDD!" 200 0
-device msubckt sky130_fd_pr__pfet_01v8 64 506 65 507 l=30 w=200 "VDD!" "D" 60 0 "VDD!" 200 0 "a_94_506#" 200 0
+use inv inv_0 1 0 -184 0 1 124
+use Dlatch Dlatch_1 1 0 1656 0 1 124
+use Dlatch Dlatch_0 1 0 84 0 1 124
+port "NOT_Q" 2 3072 230 3138 394 li
+port "Q" 1 2736 230 2802 394 li
+port "D" 0 82 528 148 594 li
+port "CLK" 5 -186 398 -120 464 li
+node "li_n264_0#" 467 1550.52 -264 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336192 7196 0 0 0 0 0 0 0 0 0 0 0 0
+node "NOT_Q" 32 59.8704 3072 230 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10824 460 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q" 32 56.9425 2736 230 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10824 460 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1500_230#" 32 56.9425 1500 230 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10824 460 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1164_227#" 37 274.793 1164 227 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11050 468 26092 1840 0 0 0 0 0 0 0 0 0 0
+node "li_1654_528#" 13 39.8801 1654 528 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4356 264 0 0 0 0 0 0 0 0 0 0 0 0
+node "D" 13 27.7657 82 528 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4356 264 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n84_230#" 155 884.56 -84 230 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39468 1460 97916 5246 0 0 0 0 0 0 0 0 0 0
+node "CLK" 90 280.895 -186 398 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17424 792 32593 1472 0 0 0 0 0 0 0 0 0 0
+node "li_n264_864#" 467 1550.52 -264 864 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336192 7196 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "D" "li_1164_227#" 0.0480407
+cap "li_n264_0#" "Q" 15.5833
+cap "Q" "li_1500_230#" 3.49082
+cap "CLK" "li_n84_230#" 165.11
+cap "li_n264_864#" "D" 8.47148
+cap "CLK" "li_1164_227#" 2.14662
+cap "li_n264_0#" "li_1654_528#" 5.48804
+cap "Q" "li_n84_230#" 2.39352
+cap "li_n264_0#" "li_1500_230#" 15.5833
+cap "li_n264_864#" "CLK" 44.0146
+cap "Q" "li_1164_227#" 1.08426
+cap "Q" "NOT_Q" 14.0336
+cap "li_n264_0#" "li_n84_230#" 104.844
+cap "Q" "li_n264_864#" 5.06928
+cap "li_n84_230#" "li_1654_528#" 0.236511
+cap "li_n264_0#" "li_1164_227#" 16.8213
+cap "li_n84_230#" "li_1500_230#" 1.8547
+cap "li_1654_528#" "li_1164_227#" 5.7469
+cap "li_n264_0#" "NOT_Q" 15.5833
+cap "li_1164_227#" "li_1500_230#" 20.4469
+cap "li_n264_0#" "li_n264_864#" 82.5867
+cap "CLK" "D" 1.47657
+cap "li_n264_864#" "li_1654_528#" 8.47148
+cap "li_n264_864#" "li_1500_230#" 5.06928
+cap "li_n84_230#" "li_1164_227#" 305.036
+cap "NOT_Q" "li_n84_230#" 0.983691
+cap "li_n264_864#" "li_n84_230#" 46.2976
+cap "NOT_Q" "li_1164_227#" 0.104523
+cap "li_n264_864#" "li_1164_227#" 20.2139
+cap "li_n264_0#" "D" 5.48804
+cap "NOT_Q" "li_n264_864#" 5.06928
+cap "D" "li_1654_528#" 1.09713
+cap "li_n264_0#" "CLK" 37.208
+cap "li_n84_230#" "D" 13.562
+cap "Dlatch_0/a_480_n20#" "Dlatch_1/D" 2.21998
+cap "Dlatch_1/a_480_n20#" "inv_0/VDD!" 0.0954933
+cap "Dlatch_1/a_94_506#" "inv_0/GND!" 0.201842
+cap "inv_0/GND!" "inv_0/VDD!" -36.9249
+cap "Dlatch_1/a_94_506#" "Dlatch_0/a_480_n20#" 0.925927
+cap "Dlatch_1/a_480_n20#" "Dlatch_0/a_94_506#" 0.249915
+cap "inv_0/Y" "Dlatch_0/NOT_Q" 1.81358
+cap "Dlatch_0/a_430_506#" "Dlatch_1/D" 6.66769
+cap "Dlatch_0/a_480_n20#" "inv_0/VDD!" 0.557367
+cap "Dlatch_0/a_94_506#" "inv_0/GND!" -1.77956
+cap "inv_0/Y" "Dlatch_0/a_994_6#" 1.97871
+cap "Dlatch_1/a_430_506#" "CLK" 0.000677206
+cap "Dlatch_0/a_430_6#" "inv_0/GND!" 0.0355795
+cap "Dlatch_0/a_430_506#" "Dlatch_1/a_94_506#" 1.021
+cap "Dlatch_0/a_480_n20#" "Dlatch_0/a_94_506#" -0.93852
+cap "D" "Dlatch_0/NOT_Q" -0.286595
+cap "Dlatch_0/a_430_506#" "inv_0/VDD!" 1.86289
+cap "inv_0/Y" "inv_0/GND!" 64.1172
+cap "CLK" "Dlatch_1/D" 1.24482
+cap "inv_0/Y" "Dlatch_0/a_480_n20#" 21.4429
+cap "Dlatch_0/a_430_506#" "Dlatch_0/a_94_506#" -1.87553
+cap "Dlatch_1/a_480_n20#" "D" 0.111048
+cap "D" "inv_0/GND!" -10.9853
+cap "inv_0/Y" "Dlatch_0/a_94_6#" 2.37585
+cap "Dlatch_1/a_94_506#" "CLK" 0.173962
+cap "Dlatch_1/a_430_506#" "inv_0/VDD!" 0.136692
+cap "CLK" "inv_0/VDD!" 65.6643
+cap "Dlatch_0/a_430_506#" "inv_0/Y" 208.591
+cap "D" "Dlatch_0/a_480_n20#" -0.522461
+cap "Dlatch_1/a_430_506#" "Dlatch_0/a_94_506#" 0.443474
+cap "CLK" "Dlatch_0/a_94_506#" 79.0918
+cap "Dlatch_1/D" "inv_0/VDD!" 0.574053
+cap "Dlatch_1/a_94_6#" "inv_0/GND!" 0.161987
+cap "Dlatch_0/a_430_506#" "D" -1.35338
+cap "Dlatch_0/a_430_506#" "Dlatch_1/Q" 0.00101076
+cap "inv_0/Y" "CLK" -28.1542
+cap "Dlatch_0/a_94_506#" "Dlatch_1/D" 1.00898
+cap "Dlatch_1/a_94_506#" "inv_0/VDD!" 0.339216
+cap "Dlatch_1/a_94_6#" "Dlatch_0/a_480_n20#" 0.0385408
+cap "Dlatch_1/a_430_506#" "D" 0.458296
+cap "Dlatch_1/a_94_506#" "Dlatch_0/a_94_506#" 1.10854
+cap "inv_0/Y" "Dlatch_1/D" -0.331201
+cap "CLK" "D" 189.183
+cap "Dlatch_0/a_94_506#" "inv_0/VDD!" -1.1509
+cap "Dlatch_0/NOT_Q" "inv_0/GND!" 0.0256811
+cap "inv_0/Y" "Dlatch_0/a_1330_6#" 0.241067
+cap "Dlatch_0/a_430_506#" "Dlatch_1/a_94_6#" 0.0405075
+cap "Dlatch_0/a_994_6#" "inv_0/GND!" 0.0159556
+cap "D" "Dlatch_1/D" 2.19735
+cap "inv_0/Y" "inv_0/VDD!" 53.708
+cap "Dlatch_1/a_480_n20#" "inv_0/GND!" 0.116063
+cap "inv_0/Y" "Dlatch_0/a_94_506#" 113.616
+cap "Dlatch_1/a_94_506#" "D" 1.01462
+cap "Dlatch_1/a_480_n20#" "Dlatch_0/a_480_n20#" 0.558965
+cap "Dlatch_0/a_430_506#" "Dlatch_0/NOT_Q" -1.75566
+cap "D" "inv_0/VDD!" -6.94047
+cap "Dlatch_0/a_480_n20#" "inv_0/GND!" 0.276607
+cap "inv_0/Y" "Dlatch_0/a_430_6#" 2.24122
+cap "Dlatch_0/a_430_506#" "Dlatch_0/a_994_6#" -0.894371
+cap "Dlatch_0/a_94_6#" "inv_0/GND!" 0.0424746
+cap "Dlatch_0/a_430_506#" "Dlatch_1/a_480_n20#" 0.40443
+cap "D" "Dlatch_0/a_94_506#" -26.2953
+cap "Dlatch_0/a_430_506#" "inv_0/GND!" -25.8982
+cap "Dlatch_1/Q" "Dlatch_0/a_94_506#" 0.000774322
+cap "CLK" "Dlatch_0/NOT_Q" 0.511293
+cap "Dlatch_1/a_430_6#" "inv_0/GND!" 0.0777864
+cap "inv_0/Y" "D" 18.0947
+cap "Dlatch_0/a_430_506#" "Dlatch_0/a_480_n20#" -4.94855
+cap "Dlatch_1/a_430_506#" "inv_0/GND!" 0.0915891
+cap "CLK" "inv_0/GND!" -25.7243
+cap "Dlatch_1/a_94_6#" "Dlatch_0/a_94_506#" 0.013245
+cap "Dlatch_1/a_430_6#" "Dlatch_0/a_480_n20#" 0.022607
+cap "Dlatch_1/a_430_506#" "Dlatch_0/a_480_n20#" 0.362322
+cap "CLK" "Dlatch_0/a_480_n20#" 5.57827
+cap "Dlatch_0/NOT_Q" "inv_0/VDD!" 0.0330823
+cap "Dlatch_1/D" "inv_0/GND!" 0.298746
+cap "inv_0/Y" "Dlatch_1/a_94_6#" 0.00610482
+cap "Dlatch_0/a_430_506#" "Dlatch_1/a_430_6#" 0.013245
+cap "Dlatch_0/a_94_6#" "CLK" 0.067208
+cap "Dlatch_0/a_1330_6#" "inv_0/GND!" 0.0015386
+cap "Dlatch_0/a_430_506#" "Dlatch_1/a_430_506#" 0.457857
+cap "Dlatch_0/a_430_506#" "CLK" 2.71578
+cap "inv_0/GND!" "D" 0.153322
+cap "inv_0/VDD!" "CLK" 0.134463
+cap "Dlatch_0/a_94_6#" "inv_0/Y" 0.0259092
+cap "Dlatch_1/a_430_506#" "Dlatch_1/a_480_n20#" -1.19305
+cap "inv_0/Y" "Q" 2.38607
+cap "Dlatch_0/a_994_6#" "Dlatch_1/D" 0.0775857
+cap "Dlatch_0/a_994_6#" "inv_0/GND!" 0.163936
+cap "Dlatch_0/NOT_Q" "inv_0/Y" 24.9327
+cap "Dlatch_1/D" "Dlatch_0/a_430_506#" 243.666
+cap "Dlatch_0/a_94_506#" "Dlatch_1/a_480_n20#" 0.515155
+cap "Dlatch_0/a_480_n20#" "Dlatch_1/a_94_506#" 1.07156
+cap "Dlatch_1/a_430_506#" "D" 0.453599
+cap "inv_0/VDD!" "Dlatch_1/D" 15.3399
+cap "inv_0/GND!" "Dlatch_0/a_430_506#" -18.9159
+cap "CLK" "Dlatch_0/NOT_Q" 0.418265
+cap "Dlatch_1/a_430_6#" "inv_0/Y" 1.00881
+cap "Dlatch_1/a_430_506#" "Dlatch_0/a_994_6#" 0.0646583
+cap "Dlatch_0/a_1330_6#" "Dlatch_1/a_94_506#" 0.120095
+cap "inv_0/GND!" "inv_0/VDD!" -40.9648
+cap "inv_0/Y" "Dlatch_1/a_94_506#" 85.0546
+cap "Dlatch_1/D" "Q" 0.879998
+cap "Dlatch_1/a_430_506#" "Dlatch_0/a_430_506#" 2.98336
+cap "Dlatch_0/a_430_506#" "NOT_Q" 0.48362
+cap "Dlatch_0/a_94_6#" "Dlatch_1/D" 0.0463324
+cap "inv_0/GND!" "Q" 0.0397609
+cap "Dlatch_0/a_94_6#" "inv_0/GND!" 0.013245
+cap "Dlatch_0/NOT_Q" "Dlatch_1/D" 3.30328
+cap "Dlatch_0/a_480_n20#" "inv_0/Y" 2.34738
+cap "D" "Dlatch_1/a_480_n20#" 0.0559753
+cap "Dlatch_1/a_430_506#" "inv_0/VDD!" 3.2042
+cap "inv_0/VDD!" "NOT_Q" 0.100204
+cap "CLK" "Dlatch_1/a_94_506#" 0.54094
+cap "inv_0/GND!" "Dlatch_0/NOT_Q" 8.67337
+cap "inv_0/VDD!" "Dlatch_0/a_94_506#" 0.298686
+cap "Dlatch_0/a_1330_6#" "inv_0/Y" 2.2846
+cap "Dlatch_0/a_994_6#" "Dlatch_1/a_480_n20#" 0.0119462
+cap "Dlatch_0/a_430_6#" "Dlatch_1/a_94_506#" 0.0380538
+cap "Dlatch_1/a_994_6#" "Dlatch_0/NOT_Q" 0.0405075
+cap "Dlatch_1/a_430_6#" "Dlatch_1/D" 0.087329
+cap "Dlatch_1/a_430_6#" "inv_0/GND!" 0.0976412
+cap "Dlatch_1/D" "Dlatch_1/a_94_506#" -19.3793
+cap "Dlatch_1/a_430_506#" "Dlatch_0/NOT_Q" 3.28292
+cap "Dlatch_0/NOT_Q" "NOT_Q" 0.419135
+cap "Dlatch_0/a_430_506#" "Dlatch_1/a_480_n20#" 2.73591
+cap "inv_0/VDD!" "Dlatch_1/a_480_n20#" -0.841267
+cap "Dlatch_0/a_480_n20#" "Dlatch_1/D" 3.10421
+cap "CLK" "inv_0/Y" -0.0513211
+cap "inv_0/GND!" "Dlatch_1/a_94_506#" 0.642569
+cap "inv_0/GND!" "Dlatch_0/a_480_n20#" 0.250223
+cap "inv_0/VDD!" "D" 0.193638
+cap "Dlatch_0/a_430_6#" "inv_0/Y" 0.238134
+cap "Dlatch_1/a_94_6#" "Dlatch_0/NOT_Q" 0.0855462
+cap "Dlatch_1/a_430_506#" "Dlatch_1/a_94_506#" -0.710697
+cap "Dlatch_0/a_1330_6#" "Dlatch_1/D" 0.115161
+cap "Dlatch_0/a_1330_6#" "inv_0/GND!" 0.217396
+cap "Dlatch_1/D" "inv_0/Y" 114.882
+cap "Dlatch_0/NOT_Q" "Dlatch_1/a_480_n20#" 3.40999
+cap "Dlatch_0/a_94_506#" "Dlatch_1/a_94_506#" 1.38563
+cap "Dlatch_1/a_430_506#" "Dlatch_0/a_480_n20#" 0.321606
+cap "inv_0/VDD!" "Dlatch_0/a_430_506#" 1.44432
+cap "inv_0/GND!" "inv_0/Y" 17.4419
+cap "CLK" "Dlatch_1/D" 0.202389
+cap "Dlatch_1/a_994_6#" "inv_0/Y" 0.690879
+cap "Dlatch_1/a_430_506#" "Dlatch_0/a_1330_6#" 0.0976412
+cap "inv_0/GND!" "CLK" 0.103221
+cap "Dlatch_1/a_480_n20#" "Dlatch_1/a_94_506#" -0.857355
+cap "Dlatch_0/a_430_506#" "Q" 0.687023
+cap "Dlatch_1/a_430_506#" "inv_0/Y" 12.7423
+cap "inv_0/Y" "NOT_Q" 1.6555
+cap "Dlatch_0/a_430_6#" "Dlatch_1/D" 0.0640288
+cap "Dlatch_0/NOT_Q" "Dlatch_0/a_430_506#" -8.93916
+cap "Dlatch_0/a_94_506#" "inv_0/Y" 1.11408
+cap "Dlatch_0/a_480_n20#" "Dlatch_1/a_480_n20#" 0.271742
+cap "inv_0/VDD!" "Q" 0.174815
+cap "D" "Dlatch_1/a_94_506#" 0.550472
+cap "Dlatch_0/a_430_6#" "inv_0/GND!" 0.0537526
+cap "Dlatch_1/a_430_506#" "CLK" 0.00381633
+cap "inv_0/VDD!" "Dlatch_0/NOT_Q" 4.0839
+cap "inv_0/GND!" "Dlatch_1/D" -21.0377
+cap "Dlatch_1/a_94_6#" "inv_0/Y" 3.71062
+cap "Dlatch_0/a_1330_6#" "Dlatch_1/a_480_n20#" 0.0252851
+cap "Dlatch_0/a_994_6#" "Dlatch_1/a_94_506#" 0.0976412
+cap "Dlatch_1/a_1330_6#" "Dlatch_0/NOT_Q" 0.013245
+cap "Dlatch_1/a_994_6#" "Dlatch_1/D" 0.0208511
+cap "Dlatch_1/a_994_6#" "inv_0/GND!" 0.0380538
+cap "inv_0/Y" "Dlatch_1/a_480_n20#" 9.82546
+cap "Dlatch_1/a_430_506#" "Dlatch_1/D" 4.25922
+cap "Dlatch_0/NOT_Q" "Q" -1.22609
+cap "Dlatch_1/D" "NOT_Q" 1.76112
+cap "Dlatch_0/a_430_506#" "Dlatch_1/a_94_506#" 8.43756
+cap "inv_0/GND!" "NOT_Q" 0.036579
+cap "Dlatch_0/a_94_506#" "Dlatch_1/D" 2.18757
+cap "D" "inv_0/Y" 0.469746
+cap "inv_0/VDD!" "Dlatch_1/a_94_506#" -0.300168
+cap "Dlatch_1/a_430_506#" "inv_0/GND!" 0.374959
+cap "inv_0/GND!" "Dlatch_0/a_94_506#" 0.232922
+cap "inv_0/VDD!" "Dlatch_0/a_480_n20#" 0.435304
+cap "Dlatch_0/a_994_6#" "inv_0/Y" 0.526232
+cap "Dlatch_0/a_1330_6#" "Dlatch_0/a_430_506#" -0.962737
+cap "Dlatch_1/a_430_6#" "Dlatch_0/NOT_Q" 0.0751671
+cap "Dlatch_1/a_94_6#" "Dlatch_1/D" 0.115533
+cap "Dlatch_1/a_94_6#" "inv_0/GND!" 0.120095
+cap "Dlatch_0/a_430_506#" "inv_0/Y" 12.6724
+cap "Dlatch_1/D" "Dlatch_1/a_480_n20#" 5.50581
+cap "Dlatch_0/NOT_Q" "Dlatch_1/a_94_506#" 30.7191
+cap "Dlatch_1/a_430_506#" "Dlatch_0/a_94_506#" 0.689495
+cap "inv_0/VDD!" "inv_0/Y" 25.9226
+cap "inv_0/GND!" "Dlatch_1/a_480_n20#" 0.252928
+cap "D" "Dlatch_1/D" 2.83805
+cap "CLK" "Dlatch_0/a_430_506#" 0.0410675
+cap "Dlatch_1/a_1330_6#" "inv_0/Y" 0.394196
+cap "Dlatch_1/a_430_506#" "Dlatch_0/NOT_Q" 0.551707
+cap "Q" "Dlatch_1/D" -0.308909
+cap "Dlatch_1/GND!" "Dlatch_1/D" 0.0651828
+cap "NOT_Q" "Dlatch_1/GND!" -15.5809
+cap "NOT_Q" "Q" -14.1259
+cap "Dlatch_1/a_94_506#" "Dlatch_1/a_430_506#" -0.375404
+cap "Q" "Dlatch_0/a_94_506#" 0.00302598
+cap "NOT_Q" "Dlatch_0/NOT_Q" 0.464821
+cap "Dlatch_1/a_94_506#" "Dlatch_1/D" 0.830297
+cap "Dlatch_1/GND!" "Dlatch_0/a_94_506#" 0.00810103
+cap "Dlatch_1/CLK" "Dlatch_1/a_430_506#" 0.834067
+cap "Dlatch_1/a_94_506#" "NOT_Q" -0.0865077
+cap "Dlatch_1/a_430_506#" "Dlatch_1/VDD!" -0.0494442
+cap "Dlatch_1/VDD!" "Dlatch_1/D" 0.109169
+cap "Dlatch_1/a_94_506#" "Dlatch_0/a_94_506#" 0.0872049
+cap "Dlatch_0/a_994_6#" "Dlatch_1/GND!" 0.00872766
+cap "Dlatch_0/a_430_506#" "Dlatch_1/GND!" 0.0573921
+cap "Dlatch_0/a_430_506#" "Q" 0.622329
+cap "Dlatch_1/CLK" "NOT_Q" 0.153198
+cap "Dlatch_1/a_480_n20#" "Dlatch_1/a_94_506#" -0.283417
+cap "NOT_Q" "Dlatch_1/VDD!" -6.74144
+cap "Dlatch_1/a_430_506#" "Dlatch_1/D" 0.156642
+cap "Dlatch_1/VDD!" "Dlatch_0/a_94_506#" 0.0126596
+cap "NOT_Q" "Dlatch_1/a_430_506#" -0.0752253
+cap "Q" "Dlatch_1/GND!" -15.5445
+cap "Dlatch_0/a_430_506#" "Dlatch_1/a_94_506#" 0.321223
+cap "Dlatch_1/a_430_506#" "Dlatch_0/a_94_506#" 0.00781937
+cap "Dlatch_1/GND!" "Dlatch_0/NOT_Q" 0.0886049
+cap "Q" "Dlatch_0/NOT_Q" -1.31022
+cap "NOT_Q" "Dlatch_1/D" 0.793794
+cap "Dlatch_1/a_480_n20#" "Dlatch_1/a_430_506#" -0.301192
+cap "Q" "Dlatch_0/a_1330_6#" 0.0380538
+cap "Dlatch_1/a_94_506#" "Dlatch_1/GND!" 0.0129778
+cap "Dlatch_1/GND!" "Dlatch_0/a_1330_6#" 0.039937
+cap "Dlatch_0/a_430_506#" "Dlatch_1/VDD!" 0.109637
+cap "Dlatch_1/a_94_506#" "Dlatch_0/NOT_Q" 0.902501
+cap "Dlatch_0/a_430_506#" "Dlatch_1/a_430_506#" 0.206121
+cap "Dlatch_1/CLK" "Q" 0.0516423
+cap "Dlatch_1/a_480_n20#" "NOT_Q" -0.116452
+cap "Q" "Dlatch_1/VDD!" -5.32109
+cap "Dlatch_1/CLK" "Dlatch_1/GND!" 0.249303
+cap "Dlatch_1/GND!" "Dlatch_1/VDD!" -18.3882
+cap "Dlatch_1/VDD!" "Dlatch_0/NOT_Q" 0.179359
+cap "Dlatch_0/a_430_506#" "NOT_Q" 0.842181
+cap "Dlatch_1/CLK" "Dlatch_1/a_94_506#" 1.03184
+cap "Dlatch_1/a_94_506#" "Dlatch_1/VDD!" 0.0320889
+merge "Dlatch_0/GND!" "Dlatch_1/GND!" -1745.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -349632 -7860 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Dlatch_1/GND!" "inv_0/GND!"
+merge "inv_0/GND!" "VSUBS"
+merge "VSUBS" "li_n264_0#"
+merge "Dlatch_0/VDD!" "Dlatch_1/VDD!" -2083.89 0 0 0 0 -90792 -2640 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -349632 -7860 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Dlatch_1/VDD!" "inv_0/VDD!"
+merge "inv_0/VDD!" "li_n264_864#"
+merge "Dlatch_1/Q" "Q" -57.4644 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10824 -460 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Dlatch_0/CLK" "inv_0/A" -337.096 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -17424 -792 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_0/A" "CLK"
+merge "Dlatch_1/CLK" "inv_0/Y" -680.809 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -39468 -1460 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inv_0/Y" "li_n84_230#"
+merge "Dlatch_0/NOT_Q" "li_1500_230#" -141.884 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10824 -460 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Dlatch_0/D" "D" -152.14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4356 -264 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Dlatch_0/Q" "Dlatch_1/D" -444.814 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15406 -732 -1400 -156 0 0 0 0 0 0 0 0 0 0
+merge "Dlatch_1/D" "li_1164_227#"
+merge "li_1164_227#" "li_1654_528#"
+merge "Dlatch_1/NOT_Q" "NOT_Q" -59.6509 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10824 -460 0 0 0 0 0 0 0 0 0 0 0 0

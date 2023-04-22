@@ -1,0 +1,30 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1677806940
+<< error_s >>
+rect 572 398 574 428
+rect 572 364 573 394
+<< locali >>
+rect 4 864 748 960
+rect 286 480 352 546
+rect 82 398 148 464
+rect 508 394 572 458
+rect 217 328 573 394
+rect 610 230 676 630
+rect 4 0 748 96
+use inv  inv_0 ~/magic/library/mag
+timestamp 1676593915
+transform 1 0 510 0 1 124
+box -84 -124 242 852
+use nand2  nand2_0 ~/magic/library/mag
+timestamp 1676660346
+transform 1 0 84 0 1 124
+box -84 -124 350 852
+<< labels >>
+flabel locali 4 864 748 960 0 FreeSerif 160 0 0 0 VDD!
+flabel locali 4 0 748 96 0 FreeSerif 160 0 0 0 GND!
+flabel locali 82 398 148 464 0 FreeSerif 160 0 0 0 A
+flabel locali 286 480 352 546 0 FreeSerif 160 0 0 0 B
+flabel locali 610 230 676 630 0 FreeSerif 160 0 0 0 Y
+<< end >>

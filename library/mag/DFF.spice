@@ -1,6 +1,6 @@
 * NGSPICE file created from DFF.ext - technology: sky130A
 
-*.subckt DFF VDD D CLK GND Q NOT_Q
+.subckt Dlatch VDD D CLK GND Q NOT_Q
 X0 a_430_506# CLK VDD VDD sky130_fd_pr__pfet_01v8 ad=3.9e+11p pd=2.78e+06u as=3.24e+12p ps=2.448e+07u w=1e+06u l=150000u
 X1 a_94_6# D GND GND sky130_fd_pr__nfet_01v8 ad=1.25e+11p pd=1.5e+06u as=9e+11p ps=8.6e+06u w=500000u l=150000u
 X2 a_1330_6# Q GND GND sky130_fd_pr__nfet_01v8 ad=1.25e+11p pd=1.5e+06u as=0p ps=0u w=500000u l=150000u
@@ -19,5 +19,16 @@ X14 a_430_6# CLK GND GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=50000
 X15 NOT_Q a_430_506# a_1330_6# GND sky130_fd_pr__nfet_01v8 ad=1.8e+11p pd=1.72e+06u as=0p ps=0u w=500000u l=150000u
 X16 VDD NOT_Q Q VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
 X17 a_94_506# CLK a_94_6# GND sky130_fd_pr__nfet_01v8 ad=1.8e+11p pd=1.72e+06u as=0p ps=0u w=500000u l=150000u
+.ends
+
+.subckt inv VDD GND Y A
+X0 Y A GND GND sky130_fd_pr__nfet_01v8 ad=1.8e+11p pd=1.72e+06u as=1.8e+11p ps=1.72e+06u w=500000u l=150000u
+X1 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=3.6e+11p pd=2.72e+06u as=3.6e+11p ps=2.72e+06u w=1e+06u l=150000u
+.ends
+
+*.subckt DFF D Q NOT_Q CLK
+XDlatch_0 inv_0/VDD D CLK inv_0/GND Dlatch_1/D Dlatch_0/NOT_Q Dlatch
+XDlatch_1 inv_0/VDD Dlatch_1/D inv_0/Y inv_0/GND Q NOT_Q Dlatch
+Xinv_0 inv_0/VDD inv_0/GND inv_0/Y CLK inv
 *.ends
 
